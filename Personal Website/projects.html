@@ -22,201 +22,317 @@
     <main class="projects-section">
         <h1 class="section-title">Projects</h1>
 
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="./images/OpenCourtLogo.png" alt="OpenCourt App" class="project-image">
-                <h2>OpenCourt App</h2>
-                <ul>
-                    <li>Collaborated with a team to develop a cross-platform mobile app using React Native, Expo, and JavaScript, backed by Firebase Authentication and Firestore to enable users to efficiently organize pickup basketball games.</li>
-                    <li>Utilized HTML elements and CSS styling to create an engaging and interactive user interface.</li>
-                    <li>Implemented React Native Maps functionality to mark user location and Villanova’s on-campus basketball courts, enabling users to view nearby courts with their associated names and descriptions.</li>
-                    <li>Implemented court check-in pages to enable real-time court check-ins and display active users.</li>
-                    <li>Built comprehensive user profiles supporting photos, bios, and a badge/achievement system.</li>
-                    <li>Developed social functionality including friend lists, friend requests, DMs, group chats, court-specific chatrooms, reactions, threaded replies, and Tenor GIF API support for cohesive communication.</li>
-                </ul>
+        <div class="project-tabs">
+            <input type="radio" name="project-category" id="academic-projects" class="project-tab-input" checked>
+            <input type="radio" name="project-category" id="personal-projects" class="project-tab-input">
 
-                <a href="https://github.com/Chegarty123/SEOpenCourtFinal" target="_blank" class="project-link">View on GitHub</a>
-                <a href="#videoModal" class="project-link">Watch Demo Video</a>
+            <div class="project-tab-labels" role="tablist" aria-label="Project categories">
+                <label for="academic-projects" class="project-tab-label" role="tab">Academic &amp; Professional</label>
+                <label for="personal-projects" class="project-tab-label" role="tab">Personal Projects</label>
+            </div>
 
+            <div class="projects-grid project-tab-panel academic-projects" role="tabpanel">
+                <div class="project-card">
+                    <img src="./images/OpenCourtShorterLogo.jpeg" alt="OpenCourt App" class="project-image">
+                    <h2>OpenCourt App</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Full-Stack Developer</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Sep 2025 – Dec 2025</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Collaborated with a team to develop a cross-platform mobile app using React Native, Expo, and JavaScript, backed by Firebase Authentication and Firestore to enable users to efficiently organize pickup basketball games.</li>
+                        <li>Utilized HTML elements and CSS styling to create an engaging and interactive user interface.</li>
+                        <li>Implemented React Native Maps functionality to mark user location and Villanova’s on-campus basketball courts, enabling users to view nearby courts with their associated names and descriptions.</li>
+                        <li>Implemented court check-in pages to enable real-time court check-ins and display active users.</li>
+                        <li>Built comprehensive user profiles supporting photos, bios, and a badge/achievement system.</li>
+                        <li>Developed social functionality including friend lists, friend requests, DMs, group chats, court-specific chatrooms, reactions, threaded replies, and Tenor GIF API support for cohesive communication.</li>
+                    </ul>
+                    <a href="https://github.com/Chegarty123/SEOpenCourtFinal" target="_blank" class="project-link">View on GitHub</a>
+                    <a href="#videoModal" class="project-link">Watch Demo Video</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/CulinaryCavernsLogo.png" alt="Culinary Caverns Game" class="project-image">
+                    <h2>Culinary Caverns</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Game Developer Intern</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Jun 2024 – Sep 2024</span>
+                        <span class="project-context">Games For Love</span>
+                    </div>
+                    <ul>
+                        <li>Collaborated with a team of interns to develop a multi-level 2D mining game utilizing Unity Game Engine and C# scripting.</li>
+                        <li>Programmed various game features including player movement and animation, terrain seed generation, abilities for the player to break and collect blocks, and a dynamic inventory UI system to store and show collected items.</li>
+                        <li>Implemented background music, sound effects, and level completion cues to enhance the user experience.</li>
+                        <li>Contributed to game and level design by coordinating and facilitating collaboration between team members through the use of GitHub and Trello, and organizing Discord meetings.</li>
+                        <li>Created for submission to Games for Love's Cause Jam to be featured in a charity bundle sold to raise funds to support children in hospitals.</li>
+                    </ul>
+                    <a href="https://github.com/tylerheckel2/CulinaryCaverns" target="_blank" class="project-link">View on GitHub</a>
+                    <a href="https://tylerheckel2.itch.io/culinary-caverns" target="_blank" class="project-link">Play Demo</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/NBA_Playoffs_Logo_2017.png" alt="NBA Playoff Prediction Classification Model" class="project-image">
+                    <h2>NBA Playoff Prediction Classification Model</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Machine Learning</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Apr 2026 – May 2026</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Collected 270 team-season observations across 9 NBA seasons via the nba_api REST API, engineering 23 features spanning traditional, advanced, and efficiency statistics.</li>
+                        <li>Trained and compared 7 scikit-learn classifiers, including Logistic Regression, Random Forest, Gradient Boosting, SVM, and MLP Neural Network using stratified 5-fold cross-validation and GridSearchCV hyperparameter tuning.</li>
+                        <li>Achieved 86.7% F1 and 91.6% ROC-AUC on held-out test data; conducted feature importance analysis and error analysis to identify model limitations around borderline playoff teams.</li>
+                    </ul>
+                    <a href="https://github.com/bquigs6/Final-Machine-Learning-Project" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/M2M.jpeg" alt="M2M" class="project-image">
+                    <h2>Machine-to-Machine File Transfer System</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Software Engineer/Networking</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Apr 2025 – May 2025</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Developed a simplified FTP-style client-server system using Python sockets to simulate machine-to-machine (M2M) communication in a controlled network environment.</li>
+                        <li>Engineered TCP-based socket communication to enable reliable file uploads, downloads, and session termination between autonomous client and server components.</li>
+                        <li>Designed and implemented core M2M principles including connection establishment, command parsing, and file integrity verification, mimicking real-world IoT device interactions.</li>
+                        <li>Conducted structured simulations to validate system reliability and ensure consistent performance.</li>
+                    </ul>
+                    <a href="https://github.com/tylerheckel2/M2M-File-Transfer-System" target="_blank" class="project-link">View on GitHub</a>
+                </div>
                 
+                <div class="project-card">
+                    <img src="./images/Weather App.png" alt="Weather App" class="project-image">
+                    <h2>Weather Web Application</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Full-Stack Developer</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Nov 2025 – Dec 2025</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Built a React-based weather application integrating external weather APIs to fetch and display real-time and forecasted weather data for user-selected cities.</li>
+                        <li>Implemented full-stack functionality including user authentication and MongoDB-based persistence for saving and managing favorite cities.</li>
+                        <li>Developed dynamic UI features including city search with dropdown suggestions, unit conversion, weather cards, and accessibility improvements through iterative development and bug fixing.</li>
+                    </ul>
+                    <a href="https://github.com/tylerheckel2/Weather-App" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/CuatroCaminos.png" alt="Cuatro Caminos" class="project-image">
+                    <h2>Villanova University x Cuatro Caminos Coffee – Business Consulting Project</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Consultant</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Oct 2025 – Dec 2025</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Served as student consultant on a 4-person team evaluating a proposed vendor partnership between Villanova Dining and a Panama based specialty coffee farm, conducting stakeholder interviews with the farm’s leadership, a U.S. importer/roaster, and Villanova’s dining director.</li>
+                        <li>Led third-party vendor and supply chain analysis, evaluating sourcing, import, and roasting logistics to validate the partnership, identifying a 22% cost reduction versus Villanova’s existing wholesale contract.</li>
+                        <li>Researched traceability and transparency mechanisms (QR codes, RFID, blockchain) to support auditable, ethically sourced vendor relationships.</li>
+                        <li>Presented pricing analysis, risk considerations, and a go-forward recommendation to university stakeholders.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/LiveStride.jpeg" alt="LiveStride" class="project-image">
+                    <h2>LiveStride – Gamified Fitness App Venture</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Product Strategy/Entrepreneurship</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Oct 2024 – May 2025</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Led a 3-person team through a two-semester, hypothesis-driven venture-building process for a gamified cardio fitness app, running 6 structured test-and-learn cycles to validate product, pricing, and go-to-market assumptions.</li>
+                        <li>Conducted customer discovery interviews and surveys to define target personas and validate demand for core features including real-time feedback, VO2 Max tracking, and gamified progression.</li>
+                        <li>Designed and validated a subscription pricing model using survey-driven willingness-to-pay data, landing on a $4/month price point balancing affordability with sustainability.</li>
+                        <li>Built and iteratively refined an interactive phone and smartwatch prototype based on direct user testing, and developed go-to-market strategy including brand identity and a public landing page.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/AR_VR_Sports.jpeg" alt="AR/VR Sports" class="project-image">
+                    <h2>AR/VR in Sports – Emerging Technology Venture Research</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Product/Business Analyst</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Mar 2025 – May 2025</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Researched and evaluated AR/VR, IoT, and sensor-based technologies for athletic training as part of a 3-person venture project, conducting a STEEPL feasibility assessment across social, technological, economic, and regulatory dimensions.</li>
+                        <li>Conducted primary research through 8+ stakeholder interviews spanning AR/VR faculty, an Accenture AR/VR practice lead, a sensor engineering specialist, and high school coaches and athletes to validate product requirements.</li>
+                        <li>Identified two core market gaps — limited individualized athlete feedback and coaches' inability to monitor large teams — and proposed a wearable sensor and AR-visualization solution to address them.</li>
+                        <li>Sized the addressable market using national participation data (1.1M+ student-athletes, 17K+ schools) and benchmarked the concept against incumbents Apple Watch and Hudl through competitive analysis.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/NBA_Statistics.jpeg" alt="NBA Statistics" class="project-image">
+                    <h2>NBA Statistics Tracker Website</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Full-Stack Developer</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Dec 2023 – Dec 2023</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Developed an NBA Statistics Tracker website in collaboration with a team using React.</li>
+                        <li>Utilized the capabilities of React.js, HTML, and CSS to build a dynamic and responsive user interface, ensuring an efficient and engaging user experience with weekly updates to statistics.</li>
+                        <li>Integrated navigation functionality to allow the user to efficiently and effectively navigate between different statistics pages.</li>
+                        <li>Implemented a database using Firebase to establish a secure user authentication system, allowing users to sign up and store credentials.</li>
+                    </ul>
+                    <a href="https://github.com/tylerheckel2/NBAStatsWebsiteProject" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/Football_Ranking.jpeg" alt="Football Ranking" class="project-image">
+                    <h2>College Football Ranking System</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Programmer/Data Analyst</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">May 2024 – May 2024</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Designed algorithms using Python to rank college football teams in the Big 12 conference based on game outcomes and data from the 2016-17 season.</li>
+                        <li>Implemented Colley’s and Massey’s methods to evaluate teams based on various determining factors.</li>
+                        <li>Utilized linear algebra concepts such as systems of linear equations, matrix operations, and eigenvalues to analyze data and enhance accuracy of rankings.</li>
+                        <li>Processed datasets to extract insights and draw conclusions, showcasing experience in data analysis, Python programming, and mathematical modeling.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/Movie_List.jpeg" alt="Movie List" class="project-image">
+                    <h2>Movie List App</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Full-Stack Developer</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Nov 2023 – Nov 2023</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Developed a React Native mobile app to create an interactive movie information tracker.</li>
+                        <li>Utilized Expo for project setup and used a FlatList to display a list of movies on a home screen.</li>
+                        <li>Integrated navigation functionality to display pages with relative details upon selecting movie titles.</li>
+                        <li>Implemented an efficient user interface allowing the user to fetch additional movie data from an API and effectively update the information seen on screen.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/JUnit.jpeg" alt="JUnit" class="project-image">
+                    <h2>Recursive Problem Solving with JUnit Testing</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Software Tester</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Apr 2023 – Apr 2023</span>
+                        <span class="project-context">Villanova University</span>
+                    </div>
+                    <ul>
+                        <li>Utilized JUnit to test recursive methods to solve various problems, including exponentiation, string reversal, cleaning adjacent characters, and computing Fibonacci numbers.</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="project-card">
-                <img src="./images/CulinaryCavernsLogo.png" alt="Culinary Caverns Game" class="project-image">
-                <h2>Culinary Caverns</h2>
-                <ul>
-                    <li>Collaborated with a team of interns to develop a multi-level 2D mining game utilizing Unity Game Engine and C# scripting.</li>
-                    <li>Programmed various game features including player movement and animation, terrain seed generation, abilities for the player to break and collect blocks, and a dynamic inventory UI system to store and show collected items.</li>
-                    <li>Implemented background music, sound effects, and level completion cues to enhance the user experience.</li>
-                    <li>Contributed to game and level design by coordinating and facilitating collaboration between team members through the use of GitHub and Trello, and organizing Discord meetings.</li>
-                    <li>Created for submission to Games for Love's Cause Jam to be featured in a charity bundle sold to raise funds to support children in hospitals.</li>
-                </ul>
-                <a href="https://github.com/tylerheckel2/CulinaryCaverns" target="_blank" class="project-link">View on GitHub</a>
-                <a href="https://tylerheckel2.itch.io/culinary-caverns" target="_blank" class="project-link">Play Demo</a>
+            <div class="projects-grid project-tab-panel personal-projects" role="tabpanel">
+                <div class="project-card">
+                    <img src="./images/FairMark NIL Logo Concept Logo Only.jpeg" alt="FairMark" class="project-image">
+                    <h2>FairMark NIL</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Creator &amp; AI-Assisted Product Developer</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Jul 2026 – Present</span>
+                        <span class="project-context">Personal Project</span>
+                    </div>
+                    <ul>
+                        <li>Built and iteratively refined a full-stack web application for evaluating Division I NIL sponsorship offers using Lovable, GitHub Copilot, React, Supabase, and the Google Gemini API.</li>
+                        <li>Defined product requirements and AI analysis logic for generating market-range assessments, confidence levels, and negotiation guidance from athlete profile and deal-term inputs.</li>
+                        <li>Used AI-assisted development workflows to create features including PDF/DOCX contract parsing, context-aware follow-up chat, Firecrawl-based profile enrichment, PDF reporting, and side-by-side offer comparison.</li>
+                        <li>Designed product requirements around user authentication, row-level data access, and de-identified benchmark analytics to support privacy-conscious handling of athlete information.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/Perch Logo.jpeg" alt="Perch" class="project-image">
+                    <h2>Perch – AI Job Discovery Platform</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Creator &amp; AI-Assisted Product Developer</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Jul 2026 – Present</span>
+                        <span class="project-context">Personal Project</span>
+                    </div>
+                    <ul>
+                        <li>Built and refined a full-stack user-friendly job matching platform using AI-assisted development tools (Lovable, GitHub Copilot), defining requirements, system architecture, and technical specifications.</li>
+                        <li>Architected a resumable, fault-tolerant company career site scanning pipeline (chunked job processing, rate-limit pacing, background workers) to reliably process 25,000+ listings within serverless execution constraints.</li>
+                        <li>Conducted technical QA and root-cause debugging across the stack, independently verifying API behavior, identifying data-integrity issues, and directing fixes rather than accepting unverified claims of completion.</li>
+                        <li>Evaluated and integrated 6+ third-party ATS platforms (Workday, Greenhouse, Ashby, Lever, SmartRecruiters, Avature, and others) by researching undocumented public APIs and defining fallback strategies for unsupported cases.</li>
+                        <li>Managed technical tradeoffs around cost, reliability, and API rate limits (Google Gemini) to keep a daily automated pipeline within free-tier constraints.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/Image_Search.jpeg" alt="Image Search" class="project-image">
+                    <h2>Image-Based Search Engine</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Machine Learning/Full-Stack</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Jan 2026 – Jan 2026</span>
+                        <span class="project-context">Personal Project</span>
+                    </div>
+                    <ul>
+                        <li>Developed an image similarity search system leveraging deep learning and vector-based retrieval to allow users to upload an image and receive visually similar matches from a Kaggle dataset.</li>
+                        <li>Implemented a pretrained ResNet50 model (PyTorch) as a feature extractor to generate 2048‑dimensional embeddings capturing high‑level visual characteristics.</li>
+                        <li>Built a dual‑index FAISS vector search pipeline supporting L2 and cosine similarity.</li>
+                        <li>Developed a FastAPI REST API for real‑time inference and a React frontend for image upload, preview, and ranked results displaying distances and corresponding dataset images.</li>
+                    </ul>
+                    <a href="https://github.com/tylerheckel2/Image-Based-Search__" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/Encryption_Simulation.jpeg" alt="Encryption Simulation" class="project-image">
+                    <h2>Encryption Algorithm Simulation</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Cybersecurity/Cryptography</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Nov 2024 – Dec 2024</span>
+                        <span class="project-context">Personal Project</span>
+                    </div>
+                    <ul>
+                        <li>Developed two interactive Python programs to simulate symmetric (AES) and asymmetric (RSA) encryption using the cryptography library.</li>
+                        <li>Implemented AES encryption with Fernet, including key generation, message encryption/decryption, and a user-friendly console interface.</li>
+                        <li>Built RSA encryption functionality with key pair generation, secure key storage using PEM files, and message encryption/decryption using OAEP padding and SHA-256 hashing.</li>
+                        <li>Enabled file-based key and message management to simulate real-world secure communication workflows.</li>
+                    </ul>
+                    <a href="https://github.com/tylerheckel2/Encryption-Algorithm-Simulation" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/2DPlatformer.png" alt="Multi-level 2D Platformer Game" class="project-image">
+                    <h2>Multi-level 2D Platformer Game</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Lead Game Developer</span>
+                        <span class="project-meta-divider">|</span>
+                        <span class="project-date">Aug 2023 – Aug 2023</span>
+                        <span class="project-context">Personal Project</span>
+                    </div>
+                    <ul>
+                        <li>Developed a dynamic and engaging multi-level 2D platformer game using Unity Game Engine and C# scripting.</li>
+                        <li>Implemented player movement mechanics and animations, incorporating player death logic and responsive level restart mechanics upon collision with traps.</li>
+                        <li>Designed challenging levels and integrated 2D enemy AI to enhance gameplay excitement.</li>
+                        <li>Integrated a real-time item collection system with a visible counter, background music, and sound effects for jumping, item collection, player demise, and level completion cues.</li>
+                    </ul>
+                    <a href="https://github.com/tylerheckel2/MultiLevel2DPlatformerGame" target="_blank" class="project-link">View on GitHub</a>
+                </div>
             </div>
-
-            <div class="project-card">
-                <img src="./images/NBA_Playoffs_Logo_2017.png" alt="Multi-level 2D Platformer Game" class="project-image">
-                <h2>NBA Playoff Prediction Classification Model</h2>
-                <ul>
-                    <li>Collected 270 team-season observations across 9 NBA seasons via the nba_api REST API, engineering 23 features spanning traditional, advanced, and efficiency statistics.</li>
-                    <li>Trained and compared 7 scikit-learn classifiers, including Logistic Regression, Random Forest, Gradient Boosting, SVM, and MLP Neural Network using stratified 5-fold cross-validation and GridSearchCV hyperparameter tuning.</li>
-                    <li>Achieved 86.7% F1 and 91.6% ROC-AUC on held-out test data; conducted feature importance analysis and error analysis to identify model limitations around borderline playoff teams.</li>
-                </ul>
-                <a href="https://github.com/bquigs6/Final-Machine-Learning-Project" target="_blank" class="project-link">View on GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h2>Image-Based Search Engine</h2>
-                <ul>
-                    <li>Developed an image similarity search system leveraging deep learning and vector-based retrieval to allow users to upload an image and receive visually similar matches from a Kaggle dataset.</li>
-                    <li>Implemented a pretrained ResNet50 model (PyTorch) as a feature extractor to generate 2048‑dimensional embeddings capturing high‑level visual characteristics.</li>
-                    <li>Built a dual‑index FAISS vector search pipeline supporting L2 and cosine similarity.</li>
-                    <li>Developed a FastAPI REST API for real‑time inference and a React frontend for image upload, preview, and ranked results displaying distances and corresponding dataset images.</li>
-                </ul>
-                <a href="https://github.com/tylerheckel2/Image-Based-Search__" target="_blank" class="project-link">View on GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h2>Machine-to-Machine File Transfer System</h2>
-                <ul>
-                    <li>Developed a simplified FTP-style client-server system using Python sockets to simulate machine-to-machine (M2M) communication in a controlled network environment.</li>
-                    <li>Engineered TCP-based socket communication to enable reliable file uploads, downloads, and session termination between autonomous client and server components.</li>
-                    <li>Designed and implemented core M2M principles including connection establishment, command parsing, and file integrity verification, mimicking real-world IoT device interactions.</li>
-                    <li>Conducted structured simulations to validate system reliability and ensure consistent performance.</li>
-                </ul>
-                <a href="https://github.com/tylerheckel2/M2M-File-Transfer-System" target="_blank" class="project-link">View on GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h2>Encryption Algorithm Simulation</h2>
-                <ul>
-                    <li>Developed two interactive Python programs to simulate symmetric (AES) and asymmetric (RSA) encryption using the cryptography library.</li>
-                    <li>Implemented AES encryption with Fernet, including key generation, message encryption/decryption, and a user-friendly console interface.</li>
-                    <li>Built RSA encryption functionality with key pair generation, secure key storage using PEM files, and message encryption/decryption using OAEP padding and SHA-256 hashing.</li>
-                    <li>Enabled file-based key and message management to simulate real-world secure communication workflows.</li>
-                </ul>
-                <a href="https://github.com/tylerheckel2/Encryption-Algorithm-Simulation" target="_blank" class="project-link">View on GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./images/CuatroCaminos.png"alt="Cuatro Caminos" class="project-image">
-                <h2>Villanova University x Cuatro Caminos Coffee – Business Consulting Project</h2>
-                <ul>
-                    <li>Served as student consultant on a 4-person team evaluating a proposed vendor partnership between Villanova Dining and a Panama based specialty coffee farm, conducting stakeholder interviews with the farm’s leadership, a U.S. importer/roaster, and Villanova’s dining director.</li>
-                    <li>Led third-party vendor and supply chain analysis, evaluating sourcing, import, and roasting logistics to validate the partnership, identifying a 22% cost reduction versus Villanova’s existing wholesale contract.</li>
-                    <li>Researched traceability and transparency mechanisms (QR codes, RFID, blockchain) to support auditable, ethically sourced vendor relationships.</li>
-                    <li>Presented pricing analysis, risk considerations, and a go-forward recommendation to university stakeholders.</li>
-                </ul>
-            </div>
-
-            <div class="project-card">
-                <img src="./images/FairMark NIL Logo Concept Logo Only.jpeg"alt="FairMark NIL" class="project-image">
-                <h2>FairMark NIL</h2>
-                <ul>
-                    <li>Built and iteratively refined a full-stack web application for evaluating Division I NIL sponsorship offers using Lovable, GitHub Copilot, React, Supabase, and the Google Gemini API.</li>
-                    <li>Defined product requirements and AI analysis logic for generating market-range assessments, confidence levels, and negotiation guidance from athlete profile and deal-term inputs.</li>
-                    <li>Used AI-assisted development workflows to create features including PDF/DOCX contract parsing, context-aware follow-up chat, Firecrawl-based profile enrichment, PDF reporting, and side-by-side offer comparison.</li>
-                    <li>Designed product requirements around user authentication, row-level data access, and de-identified benchmark analytics to support privacy-conscious handling of athlete information.</li>
-                </ul>
-            </div>
-
-            <div class="project-card">
-                <img src="./images/Perch Logo.jpeg"alt="Perch" class="project-image">
-                <h2>Perch – AI Job Discovery Platform</h2>
-                <ul>
-                    <li>Built and refined a full-stack user-friendly job matching platform using AI-assisted development tools (Lovable, GitHub Copilot), defining requirements, system architecture, and technical specifications.</li>
-                    <li>Architected a resumable, fault-tolerant company career site scanning pipeline (chunked job processing, rate-limit pacing, background workers) to reliably process 25,000+ listings within serverless execution constraints.</li>
-                    <li>Conducted technical QA and root-cause debugging across the stack, independently verifying API behavior, identifying data-integrity issues, and directing fixes rather than accepting unverified claims of completion.</li>
-                    <li>Evaluated and integrated 6+ third-party ATS platforms (Workday, Greenhouse, Ashby, Lever, SmartRecruiters, Avature, and others) by researching undocumented public APIs and defining fallback strategies for unsupported cases.</li>
-                    <li>Managed technical tradeoffs around cost, reliability, and API rate limits (Google Gemini) to keep a daily automated pipeline within free-tier constraints.</li>
-                </ul>
-            </div>
-
-
-            <div class="project-card">
-                <img src="./images/LiveStride.png"alt="LiveStride" class="project-image">
-                <h2>LiveStride – Gamified Fitness App Venture</h2>
-                <ul>
-                    <li>Led a 3-person team through a two-semester, hypothesis-driven venture-building process for a gamified cardio fitness app, running 6 structured test-and-learn cycles to validate product, pricing, and go-to-market assumptions.</li>
-                    <li>Conducted customer discovery interviews and surveys to define target personas and validate demand for core features including real-time feedback, VO2 Max tracking, and gamified progression.</li>
-                    <li>Designed and validated a subscription pricing model using survey-driven willingness-to-pay data, landing on a $4/month price point balancing affordability with sustainability.</li>
-                    <li>Built and iteratively refined an interactive phone and smartwatch prototype based on direct user testing, and developed go-to-market strategy including brand identity and a public landing page.</li>
-                </ul>
-            </div>
-
-            <div class="project-card">
-                <img src="./images/Weather App.png" alt="Weather App" class="project-image">
-                <h2>Weather Web Application</h2>
-                <ul>
-                    <li>Built a React-based weather application integrating external weather APIs to fetch and display real-time and forecasted weather data for user-selected cities.</li>
-                    <li>Implemented full-stack functionality including user authentication and MongoDB-based persistence for saving and managing favorite cities.</li>
-                    <li>Developed dynamic UI features including city search with dropdown suggestions, unit conversion, weather cards, and accessibility improvements through iterative development and bug fixing.</li>
-                </ul>
-                <a href="https://github.com/tylerheckel2/Weather-App" target="_blank" class="project-link">View on GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h2>AR/VR in Sports - Emerging Technology Venture Research</h2>
-                <ul>
-                    <li>Researched and evaluated AR/VR, IoT, and sensor-based technologies for athletic training as part of a 3-person venture project, conducting a STEEPL feasibility assessment across social, technological, economic, and regulatory dimensions.</li>
-                    <li>Conducted primary research through 8+ stakeholder interviews spanning AR/VR faculty, an Accenture AR/VR practice lead, a sensor engineering specialist, and high school coaches and athletes to validate product requirements.</li>
-                    <li>Identified two core market gaps — limited individualized athlete feedback and coaches' inability to monitor large teams — and proposed a wearable sensor and AR-visualization solution to address them.</li>
-                    <li>Sized the addressable market using national participation data (1.1M+ student-athletes, 17K+ schools) and benchmarked the concept against incumbents Apple Watch and Hudl through competitive analysis.</li>
-                </ul>
-            </div>
-
-            <div class="project-card">
-                <img src="./images/2DPlatformer.png" alt="Multi-level 2D Platformer Game" class="project-image">
-                <h2>Multi-level 2D Platformer Game</h2>
-                <ul>
-                    <li>Developed a dynamic and engaging multi-level 2D platformer game using Unity Game Engine and C# scripting.</li>
-                    <li>Implemented player movement mechanics and animations, incorporating player death logic and responsive level restart mechanics upon collision with traps.</li>
-                    <li>Designed challenging levels and integrated 2D enemy AI to enhance gameplay excitement.</li>
-                    <li>Integrated a real-time item collection system with a visible counter, background music, and sound effects for jumping, item collection, player demise, and level completion cues.</li>
-                </ul>
-                <a href="https://github.com/tylerheckel2/MultiLevel2DPlatformerGame" target="_blank" class="project-link">View on GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h2>NBA Statistics Tracker Website</h2>
-                <ul>
-                    <li>Developed an NBA Statistics Tracker website in collaboration with a team using React.</li>
-                    <li>Utilized the capabilities of React.js, HTML, and CSS to build a dynamic and responsive user interface, ensuring an efficient and engaging user experience with weekly updates to statistics.</li>
-                    <li>Integrated navigation functionality to allow the user to efficiently and effectively navigate between different statistics pages.</li>
-                    <li>Implemented a database using Firebase to establish a secure user authentication system, allowing users to sign up and store credentials.</li>
-                </ul>
-                <a href="https://github.com/tylerheckel2/NBAStatsWebsiteProject" target="_blank" class="project-link">View on GitHub</a>
-            </div>
-
-
-            <div class="project-card">
-                <h2>College Football Ranking System</h2>
-                <ul>
-                    <li>Designed algorithms using Python to rank college football teams in the Big 12 conference based on game outcomes and data from the 2016-17 season.</li>
-                    <li>Implemented Colley’s and Massey’s methods to evaluate teams based on various determining factors.</li>
-                    <li>Utilized linear algebra concepts such as systems of linear equations, matrix operations, and eigenvalues to analyze data and enhance accuracy of rankings.</li>
-                    <li>Processed datasets to extract insights and draw conclusions, showcasing experience in data analysis, Python programming, and mathematical modeling.</li>
-                </ul>
-            </div>
-
-            <div class="project-card">
-                <h2>Movie List App</h2>
-                <ul>
-                    <li>Developed a React Native mobile app to create an interactive movie information tracker.</li>
-                    <li>Utilized Expo for project setup and used a FlatList to display a list of movies on a home screen.</li>
-                    <li>Integrated navigation functionality to display pages with relative details upon selecting movie titles.</li>
-                    <li>Implemented an efficient user interface allowing the user to fetch additional movie data from an API and effectively update the information seen on screen.</li>
-                </ul>
-            </div>
-
-            <div class="project-card">
-                <h2>Recursive Problem Solving with JUnit Testing</h2>
-                <ul>
-                    <li>Utilized JUnit to test recursive methods to solve various problems, including exponentiation, string reversal, cleaning adjacent characters, and computing Fibonacci numbers.</li>
-                </ul>
-            </div>
-            
         </div>
     </main>
 
@@ -225,14 +341,12 @@
     </footer>
 
     <div id="videoModal" class="video-modal">
-    <div class="video-modal-content">
-        <a href="#" class="video-close">&times;</a>
-
-        <video controls autoplay>
-            <source src="./videos/OpenCourt Release 3 Demo.mp4" type="video/mp4">
-        </video>
+        <div class="video-modal-content">
+            <a href="#" class="video-close">&times;</a>
+            <video controls autoplay>
+                <source src="./videos/OpenCourt Release 3 Demo.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-    </div>
-
 </body>
 </html>
