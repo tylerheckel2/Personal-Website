@@ -269,6 +269,56 @@ header {
     margin: 2rem auto;
 }
 
+.project-tabs {
+    position: relative;
+}
+
+.project-tab-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.project-tab-labels {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0 auto 1.5rem;
+    padding: 0.35rem;
+    width: fit-content;
+    background: #e9edf5;
+    border-radius: 999px;
+}
+
+.project-tab-label {
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-tab-label:hover {
+    color: var(--text);
+}
+
+#academic-projects:checked ~ .project-tab-labels label[for="academic-projects"],
+#personal-projects:checked ~ .project-tab-labels label[for="personal-projects"] {
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+}
+
+.projects-grid.project-tab-panel {
+    display: none;
+}
+
+#academic-projects:checked ~ .academic-projects,
+#personal-projects:checked ~ .personal-projects {
+    display: grid;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
@@ -296,7 +346,42 @@ header {
 .project-card h2 {
     font-size: 1.18rem;
     line-height: 1.35;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.45rem;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem 0.6rem;
+    width: 100%;
+    margin-bottom: 0.95rem;
+    color: var(--text-muted);
+    font-size: 0.86rem;
+}
+
+.project-role {
+    color: var(--accent-strong);
+    font-weight: 700;
+}
+
+.project-meta-divider {
+    color: #a0aabd;
+}
+
+.project-context,
+.project-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.28rem;
+}
+
+.project-context {
+    padding: 0.22rem 0.55rem;
+    border-radius: 999px;
+    background: #eef2f9;
+    color: #42516b;
+    font-weight: 600;
 }
 
 .project-card ul {
@@ -335,6 +420,10 @@ header {
 .project-link:hover {
     background: var(--accent-strong);
     transform: translateY(-1px);
+}
+
+.project-card .project-link:first-of-type {
+    margin-top: auto;
 }
 
 .contact-section {
@@ -530,5 +619,10 @@ header {
 
     .nav-links {
         justify-content: center;
+    }
+
+    .project-tab-label {
+        padding: 0.55rem 0.85rem;
+        font-size: 0.9rem;
     }
 }
